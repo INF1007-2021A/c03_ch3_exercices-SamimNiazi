@@ -10,13 +10,13 @@ FAIL: test_to_celsius (__main__.TestExercice)
 Traceback (most recent call last):
   File "test_exercice.py", line 71, in test_to_celsius
     self.assertListEqual(
-AssertionError: Lists differ: [212.0, 212.0, 212.0] != [-17.77777777777778, -31.666666666666664, 232.77777777777777]
+AssertionError: Lists differ: [32.0, -13.0, 843.8000000000001] != [-17.77777777777778, -31.666666666666664, 232.77777777777777]
 
 First differing element 0:
-212.0
+32.0
 -17.77777777777778
 
-- [212.0, 212.0, 212.0]
+- [32.0, -13.0, 843.8000000000001]
 + [-17.77777777777778, -31.666666666666664, 232.77777777777777] : Mauvais calcul de farenheit -> celsius
 
 ======================================================================
@@ -74,6 +74,6 @@ First differing element 0:
 -  (6.981317007977318, 0.015998851476614687, 2.908882086657216e-05)] : Mauvais calcul de degres -> radians
 
 ----------------------------------------------------------------------
-Ran 5 tests in 0.006s
+Ran 5 tests in 0.005s
 
 FAILED (failures=4)
