@@ -23,13 +23,13 @@ def to_degrees(angle_rads: float) -> tuple:
 
 
 def to_celsius(temperature: float) -> float:
-    to_farenheit = (100 * (1.8)) + 32
-    return to_farenheit
+    farenheit = (temperature * 1.8) + 32
+    return farenheit
 
 
 def to_farenheit(temperature: float) -> float:
-    to_celsius = (451 - 32)* (5/9)
-    return to_celsius
+    celsius = (451 - 32)* (5/9)
+    return celsius
 
 
 def main() -> None:
@@ -40,8 +40,8 @@ def main() -> None:
     degrees, minutes, seconds = to_degrees(1.0)
     print(f"Conversion de 1 radian en degres: {degrees} degres, {minutes} minutes et {seconds} secondes")
 
-    print(f"Conversion de 100 Celsius en Farenheit: {to_celsius(100.0)}")
-    print(f"Conversion de 451 Farenheit en Celsius: {to_farenheit(451.0)}")
+    print(f"Conversion de 100 Celsius en Farenheit: {to_farenheit(100.0)}")
+    print(f"Conversion de 451 Farenheit en Celsius: {to_celsius(451.0)}")
 
 
 if __name__ == '__main__':
