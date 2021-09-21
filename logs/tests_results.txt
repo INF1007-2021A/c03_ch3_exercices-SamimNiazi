@@ -8,7 +8,7 @@ test_to_radians (__main__.TestExercice) ... FAIL
 FAIL: test_to_celsius (__main__.TestExercice)
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "test_exercice.py", line 71, in test_to_celsius
+  File "/Users/samimniazi/Desktop/inf1007/c03_ch3_exercices-SamimNiazi/test_exercice.py", line 71, in test_to_celsius
     self.assertListEqual(
 AssertionError: Lists differ: [32.0, -13.0, 843.8000000000001] != [-17.77777777777778, -31.666666666666664, 232.77777777777777]
 
@@ -23,7 +23,7 @@ First differing element 0:
 FAIL: test_to_degrees (__main__.TestExercice)
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "test_exercice.py", line 59, in test_to_degrees
+  File "/Users/samimniazi/Desktop/inf1007/c03_ch3_exercices-SamimNiazi/test_exercice.py", line 59, in test_to_degrees
     self.assertListEqual(
 AssertionError: Lists differ: [(114.59155902616465, 6875.493541569879, 41[194 chars]241)] != [(79.0980174562859, 5.881047377154118, 29.6[197 chars]998)]
 
@@ -44,7 +44,7 @@ First differing element 0:
 FAIL: test_to_farenheit (__main__.TestExercice)
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "test_exercice.py", line 83, in test_to_farenheit
+  File "/Users/samimniazi/Desktop/inf1007/c03_ch3_exercices-SamimNiazi/test_exercice.py", line 83, in test_to_farenheit
     self.assertListEqual(
 AssertionError: Lists differ: [232.7777777777778, 232.7777777777778, 232.7777777777778] != [32.0, -13.0, 843.8000000000001]
 
@@ -59,21 +59,21 @@ First differing element 0:
 FAIL: test_to_radians (__main__.TestExercice)
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "test_exercice.py", line 40, in test_to_radians
+  File "/Users/samimniazi/Desktop/inf1007/c03_ch3_exercices-SamimNiazi/test_exercice.py", line 40, in test_to_radians
     self.assertListEqual(
-AssertionError: Lists differ: [(-0.08726646259971647, 0.0005817764173314[208 chars]-05)] != [-0.08668468618238503, 0.17598251810595048[32 chars]2748]
+AssertionError: Lists differ: [-0.0[13 chars]503, 0.17598251810595045, 6.283490739798685, 6.997344948274799] != [-0.0[13 chars]503, 0.17598251810595048, 6.283490739798685, 6.9973449482748]
 
-First differing element 0:
-(-0.08726646259971647, 0.0005817764173314432, 0.0)
--0.08668468618238503
+First differing element 1:
+0.17598251810595045
+0.17598251810595048
 
 + [-0.08668468618238503, 0.17598251810595048, 6.283490739798685, 6.9973449482748]
-- [(-0.08726646259971647, 0.0005817764173314432, 0.0),
--  (0.17453292519943295, 0.0011635528346628863, 0.00028604007185462625),
--  (6.283185307179586, 0.0002908882086657216, 1.454441043328608e-05),
--  (6.981317007977318, 0.015998851476614687, 2.908882086657216e-05)] : Mauvais calcul de degres -> radians
+- [-0.08668468618238503,
+-  0.17598251810595045,
+-  6.283490739798685,
+-  6.997344948274799] : Mauvais calcul de degres -> radians
 
 ----------------------------------------------------------------------
-Ran 5 tests in 0.005s
+Ran 5 tests in 0.008s
 
 FAILED (failures=4)
